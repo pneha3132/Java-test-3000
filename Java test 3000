@@ -1,0 +1,19 @@
+public class BinaryTrianglePattern {
+    public static void printPattern(int n) 
+        for (int i = 1; i <= n; i++) 
+            for (int j = 1; j <= i; j++) {
+                if ((i + j) % 2 == 0) {
+                    System.out.print(1 + " "); // Print 1 if sum is even
+                } else {
+                    System.out.print(0 + " "); // Print 0 if sum is odd
+                }
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String[] args) {
+        int numberOfRows = 6; 
+        System.out.println("Printing the binary triangle pattern:");
+        printPattern(numberOfRows);
+    }
+}
